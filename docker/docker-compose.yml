@@ -1,0 +1,25 @@
+version: "3"
+services:
+  loan_default_project:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args:
+        - username=devel
+        - userid=1000
+    container_name: loan_default_project
+    image: loan_default_project:latest
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - ../:/home/devel/loan_default_project
+    command: /opt/conda/envs/homl3/bin/jupyter notebook --ip='0.0.0.0' --port=8888 --no-browser
+
+
+  
