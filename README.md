@@ -1,1 +1,1 @@
-# CreditPrediction
+# Loan Default Prediction
