@@ -1,4 +1,4 @@
-name: homl3
+name: ml_env
 channels:
   - conda-forge
   - defaults
@@ -20,3 +20,5 @@ dependencies:
   - tqdm=4.66  # used only in chapter 12 to display nice progress bars
   - wheel  # built-package format for pip
   - widgetsnbextension=4.0  # interactive HTML widgets for Jupyter notebooks
+  - seaborn=0.13.2
+  - statsmodels=0.14.1

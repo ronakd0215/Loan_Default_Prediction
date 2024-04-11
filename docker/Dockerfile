@@ -30,7 +30,7 @@ RUN chown ${username}:${username} ${workdir}
 USER ${username}
 WORKDIR ${workdir}
 
-ENV PATH /opt/conda/envs/homl3/bin:$PATH
+ENV PATH /opt/conda/envs/ml_env/bin:$PATH
 
 # The config below enables diffing notebooks with nbdiff (and nbdiff support
 # in git diff command) after connecting to the container by "make exec" (or
