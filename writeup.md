@@ -32,16 +32,16 @@ One thing we need to look out for is the imbalanced class distribution in the ta
 
 We initially tested 3 different models for our classification: Logistic Regression, Support Vector Machine, and Random Forest, each validated and fine-tuned using cross validation. The stability of our cross-validation scores did not indicate any high variance or overfitting so dimensionality reduction was not a priority. 
 
-*Write a bit about what choices you made while fitting the model*
+>TODO: Write a bit about what choices you made while fitting the model
 ### Random Forest
->TODO
+
 
 ### SVM
->TODO
+
 
 
 ### Logistic Regression
->TODO
+
 
 ### Conclusion on this?
 
@@ -65,5 +65,10 @@ We can also see the distribution of false and true positives with these confusio
 
 
 ## Ethical discussion
+Our machine learning model to predict whether or not individuals will default on their loans, and all those like it, has the potential to make lending a much more equitable and transparent process. The usage of models like ours has the potential to enhance the efficiency and fairness of financial services. However, we would be remiss if we did not highlight its potential to be used unethically. It is imperative to ensure that such powerful tools are used responsibly and fairly. 
+
+Improper usage of this model could lead to further discrimination and lack of accountability in the commercial lending process. Lending has historically been very unfair to people of certain racial groups and socioeconomic statuses and because these patterns are reflected in training data, banks and lending organizations who come to use models like these to make lending decisions need to be cautious of that. Regarding lack of accountability, without proper oversight, decisions made by the model could be inexplicable and irreversible, leaving individuals adversely affected by the model with no recourse. It is extremely important to maintain a high level of transparency about how the model operates. Financial institutions should be able to explain the factors leading to any particular decision, and individuals should have access to explanations of decisions that affect them.
+Predicting loan default is a very important decision because being able to receive or not receive a loan has tremendous implications for one’s financial wellbeing. Because these decisions cannot afford to be taken lightly, we should strive to further research how we can integrate machine learning into the decision making process while still ensuring its fairness. Perhaps using XAI (explicable AI) in these models could help increase the transparency of the models and limit discrimination. 
 
 ## Conclusion
+>TODO
