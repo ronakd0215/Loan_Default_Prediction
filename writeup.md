@@ -1,7 +1,7 @@
 # Title
 
 ## Introduction to data
-Where we got it, what it's used for
+>TODO: Where we got it, what it's used for
 
 
 This dataset has 255,347 cases and 17 predictor columns. When we one-hot encoded the categorical features we ended up with 24 predictors. None of the variables were highly correlated with each other and there were no outliers. We also standardized the numeric variables. The predictor names are as follows:
@@ -34,13 +34,14 @@ We initially tested 3 different models for our classification: Logistic Regressi
 
 *Write a bit about what choices you made while fitting the model*
 ### Random Forest
-
+>TODO
 
 ### SVM
+>TODO
 
 
 ### Logistic Regression
-
+>TODO
 
 ### Conclusion on this?
 
@@ -58,6 +59,7 @@ We can also see the distribution of false and true positives with these confusio
 
 
 **Some of our observations:**
+>TODO
 -   observation 1
 -   observation 2
 
