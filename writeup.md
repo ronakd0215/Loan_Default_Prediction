@@ -1,8 +1,6 @@
 # Title
 
 ## Introduction to data
->TODO: Where we got it, what it's used for
-
 
 This dataset has 255,347 cases and 17 predictor columns. When we one-hot encoded the categorical features we ended up with 24 predictors. None of the variables were highly correlated with each other and there were no outliers. We also standardized the numeric variables. The predictor names are as follows:
 
@@ -26,7 +24,12 @@ This dataset has 255,347 cases and 17 predictor columns. When we one-hot encoded
 - `LoanPurpose` (5 levels)
 - `HasCoSigner` (2 levels)
 
-One thing we need to look out for is the imbalanced class distribution in the target variable: Only 12% of the cases had a `Default` value of 1 which makes sense given that most of the time people do not default on their loans. Given the high number of cases, we were able to undersample the majority class using `RandomUnderSampler` from imblearn. 
+One thing we need to look out for is the imbalanced class distribution in the target variable: Only 12% of the cases had a `Default` value of 1 which makes sense given that most of the time people do not default on their loans. Given the high number of cases, we were able to undersample the majority class using `RandomUnderSampler` from imblearn. The Dataset was taken from Kaggle. 
+
+Building a model like this is important because in order to asses whether or not to give a loan out to a client, or even what interest rate to charge them, is a complicated process that has hisotorically been riddled with biases and non-consistent standards. Being able to utilize machine learning techniques to asses the credit-worthiness of consumers with an objective look at these features will help make the lending process far more transparent and equitable. We include an Ethical Discussion section as well to address ethical issues that could arise from the usage of this model as lending is a very important economic process that has the power to make the world a lot more inequal as well.
+
+In our exploration, we explored three different approachs to our machine learning algorithim: logisitc regression, support vector machine, and decision trees/random forest. After preprocessing the data and encoding the categorical vairables (and scaling the quantitative variables), we fitted these three models and compared the results.
+
 
 ## Model Selection and Tuning
 
